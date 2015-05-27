@@ -124,7 +124,8 @@ namespace MyClass
         /// <returns></returns>
         [DllImport("kernel32")]
         public static extern int GetPrivateProfileString(string section, string key, string def, StringBuilder retval, int size, string filePath);
-        public static string strFilePath = Application.StartupPath + "\\Config.ini";//获取INI文件默认路径
+        //public static string strFilePath = Application.StartupPath + "\\Config.ini";//获取INI文件默认路径(winform下使用)
+        public static string strFilePath = "\\Config.ini";
         public static string strSec = "";
 
         //INI文件名
